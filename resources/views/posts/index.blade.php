@@ -6,6 +6,7 @@
 </div>    
 <div class="col-md-2">
 <a href="{{route('posts.create')}}" class="btn btn-lg btn-block btn-primary">Create Posts</a>
+<a href="{{route('categories.index')}}" class="btn btn-block btn-primary">Create Categories</a>
 </div>    
 </div>
 

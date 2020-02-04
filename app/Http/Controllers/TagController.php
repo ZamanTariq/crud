@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Tag;
 
 class TagController extends Controller
-{
+{ 
 
     public function _construct(){
         $this->middleware('auth');

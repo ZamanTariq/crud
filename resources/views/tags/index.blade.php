@@ -13,6 +13,7 @@
                      <tr>
                      <th>{{$tag->id}}</th>
                      <th>{{$tag->name}}</th>
+                     <th><a href="{{route('tags.show',$tag->id)}}" class="btn btn-default btn-primary">View</a></th>
                      </tr>
                  @endforeach
              </tbody>
