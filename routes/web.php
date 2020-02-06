@@ -11,6 +11,17 @@
 |
 */
 
+Route::group(['middleware'=>['web']], function(){
+    Route::get('blog/{slug}', ['as' =>'blog.single','uses'=>'BlogController@getSingle'])->
+    where('slug','[\w\d\-\_]+');
+
+Route::get('index', 'PagesController@getIndex');
+Route::get('blog', [
+    'uses'=> 'BlogController@getIndex',
+    'as' =>'blog.single'
+]);
+
+}); 
 Route::redirect('/', 'posts');
 
 Auth::routes();

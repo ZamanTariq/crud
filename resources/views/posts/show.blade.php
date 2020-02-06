@@ -8,6 +8,9 @@
         <a href="/posts" class="btn btn-primary">Back</a>
         <hr>
        <p>Posted In: {{ $post->category->name}}</p>
+       <hr>
+       <h4>URL:</h4>
+       <a href="{{url($post->slug)}}">{{url($post->slug)}}</a>
  </div>
  
 @endsection

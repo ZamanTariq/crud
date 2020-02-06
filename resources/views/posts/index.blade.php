@@ -35,7 +35,11 @@
                     {{Form::submit('Delete', ['class' => 'btn btn-danger'])}}
                     {!!Form::close()!!}
                 </td>
-                </tr>                     
+                
+                {{-- to see slug in url
+                <a href="{{url('blog/' .$post->slug)}}" class="btn btn-primary">Slug</a>
+                --}}
+             </tr>                     
                 @endforeach
             </tbody>
         </table>
